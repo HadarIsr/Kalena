@@ -1,7 +1,5 @@
-# main.py
-from fastapi import FastAPI
-app = FastAPI()
+import uvicorn
 
-@app.get("/")
-def hello():
-    return {"message":"Hello TutLinks.com"}
+if __name__ == '__main__':
+    uvicorn.run('app:app', host="127.0.0.1", port=8080, reload=True)
+

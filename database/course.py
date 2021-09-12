@@ -24,7 +24,7 @@ def course_helper(course) -> dict:
 
 
 def retrieve_all_courses():
-    return [course_helper(course) for course in courses_collection.find()]    
+    return [course_helper(course) for course in courses_collection.find().sort("semester", 1)]
 
 
 def retrieve_course(course_id) -> dict:

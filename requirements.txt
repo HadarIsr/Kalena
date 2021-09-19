@@ -10,7 +10,6 @@ passlib
 openpyxl
 gunicorn
 asgiref==3.4.1
-bcrypt==3.2.0
 cffi==1.14.6
 click==8.0.1
 dnspython==2.1.0
